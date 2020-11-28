@@ -18,7 +18,6 @@ jobs:
         sudo mv /usr/local/bin /usr/local/mangled-bin
         sudo mv /usr/local/include /usr/local/mangled-include
         sudo mv /usr/local/lib /usr/local/mangled-lib
-        sudo mv /usr/local/libexec /usr/local/mangled-libexec
         sudo mv /usr/local/etc /usr/local/mangled-etc
         sudo mv /usr/local/sbin /usr/local/mangled-sbin
         sudo mv /usr/local/share /usr/local/mangled-share
