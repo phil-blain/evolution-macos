@@ -13,9 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Mangle Homebrew
+      run: sudo mv /usr/local /usr/mangled
     - name: Dowload setup script
       run: |
-        wget https://gitlab.gnome.org/GNOME/gtk-osx/raw/master/gtk-osx-setup.sh -O ./gtk-osx-setup.sh
+        curl https://gitlab.gnome.org/GNOME/gtk-osx/raw/master/gtk-osx-setup.sh -O ./gtk-osx-setup.sh
         chmod u+x gtk-osx-setup.sh
     - name: Run setup script
       run: |
