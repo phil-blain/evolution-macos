@@ -1,0 +1,31 @@
+language: cpp
+os: osx
+
+osx_image:
+#- xcode11.5 # 10.15
+#- xcode11.3 # 10.14
+- xcode10.1 # 10.13
+#- xcode9.2  # 10.12
+#- xcode8    # 10.11
+
+install: 
+# Download setup script
+- wget https://gitlab.gnome.org/GNOME/gtk-osx/raw/master/gtk-osx-setup.sh -O ./gtk-osx-setup.sh
+- chmod u+x gtk-osx-setup.sh
+# Inspect environment
+- echo $CC
+- echo $CXX
+- echo $CPATH
+# Mangle Homebrew
+#- sudo mv /usr/local /usr/local-mangled
+# Setup PATH
+- export PATH="/Users/travis/.new_local/bin:$PATH"
+
+
+script:
+- export PIPENV_YES=1
+- ./gtk-osx-setup.sh
+- jhbuild bootstrap-gtk-osx > build.log 2>&1 &
+- ( while sleep 5; do tail build.log | tee tail.log; if grep -f "*** success *** [14/14]" tail.log; then exit; fi; done )
+- jhbuild build meta-gtk-osx-bootstrap meta-gtk-osx-gtk3 > build.log 2>&1 &
+- ( while sleep 5; do tail build.log | tee tail.log; if grep -f "*** success *** [14/14]" tail.log; then exit; fi; done )
