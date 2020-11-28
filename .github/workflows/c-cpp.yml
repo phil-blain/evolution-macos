@@ -22,6 +22,10 @@ jobs:
         sudo mv /usr/local/sbin /usr/local/mangled-sbin
         sudo mv /usr/local/share /usr/local/mangled-share
         sudo mv /usr/local/opt /usr/local/mangled-opt
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+      with:
+        sudo: false
     - name: Dowload setup script
       run: |
         curl -O https://gitlab.gnome.org/GNOME/gtk-osx/raw/master/gtk-osx-setup.sh
