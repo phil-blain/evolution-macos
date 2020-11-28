@@ -14,13 +14,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Dowload setup script
-       run: |
-         wget https://gitlab.gnome.org/GNOME/gtk-osx/raw/master/gtk-osx-setup.sh -O ./gtk-osx-setup.sh
-         chmod u+x gtk-osx-setup.sh
+      run: |
+        wget https://gitlab.gnome.org/GNOME/gtk-osx/raw/master/gtk-osx-setup.sh -O ./gtk-osx-setup.sh
+        chmod u+x gtk-osx-setup.sh
     - name: Run setup script
-       run: |
-         export PATH="/Users/travis/.new_local/bin:$PATH"
-         export PIPENV_YES=1
-         ./gtk-osx-setup.sh
-         jhbuild bootstrap-gtk-osx
-         jhbuild build meta-gtk-osx-bootstrap meta-gtk-osx-gtk3
+      run: |
+        export PATH="$HOME/.new_local/bin:$PATH"
+        export PIPENV_YES=1
+        ./gtk-osx-setup.sh
+        jhbuild bootstrap-gtk-osx
+        jhbuild build meta-gtk-osx-bootstrap meta-gtk-osx-gtk3
