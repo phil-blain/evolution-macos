@@ -27,6 +27,7 @@ jobs:
         curl -O https://gitlab.gnome.org/GNOME/gtk-osx/raw/master/gtk-osx-setup.sh
         chmod u+x gtk-osx-setup.sh
     - name: Run setup script
+      shell: bash --login --noprofile --norc -eo pipefail {0}
       run: |
         export PATH="$HOME/.new_local/bin:$PATH"
         export PIPENV_YES=1
