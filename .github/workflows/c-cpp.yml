@@ -26,15 +26,16 @@ jobs:
         sudo mv /usr/local/sbin /usr/local/mangled-sbin
         sudo mv /usr/local/share /usr/local/mangled-share
         sudo mv /usr/local/opt /usr/local/mangled-opt
-    - name: Dowload setup script
-      run: |
-        curl -O https://gitlab.gnome.org/GNOME/gtk-osx/raw/master/gtk-osx-setup.sh
-        chmod u+x gtk-osx-setup.sh
     - name: Run setup script
-      shell: bash --login --noprofile --norc -eo pipefail {0}
       run: |
         export PATH="$HOME/.new_local/bin:$PATH"
         export PIPENV_YES=1
         ./gtk-osx-setup.sh
+    - name: Bootstrap
+      run: |
+        export PATH="$HOME/.new_local/bin:$PATH"
         jhbuild bootstrap-gtk-osx
         jhbuild build meta-gtk-osx-bootstrap meta-gtk-osx-gtk3
+    - name: Setup mymodules
+      run: |
+        echo "moduleset=os.path.join(os.environ['HOME'], 'mymodules.modules')" >> .config/jhbuildrc-custom
