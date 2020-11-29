@@ -35,3 +35,6 @@ jobs:
     - name: Setup mymodules
       run: |
         echo "moduleset=os.path.join(os.environ['HOME'], 'mymodules.modules')" >> .config/jhbuildrc-custom
+        cp mymodules.modules $HOME/
+        export PATH="$HOME/.new_local/bin:$PATH"
+        jhbuild evolution evolution-ews

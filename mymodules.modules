@@ -1,0 +1,532 @@
+?xml version="1.0"?>
+<!DOCTYPE moduleset SYSTEM "moduleset.dtd">
+<?xml-stylesheet type="text/xsl" href="moduleset.xsl"?>
+<moduleset>
+    <include href="https://gitlab.gnome.org/GNOME/gtk-osx/raw/master/modulesets-stable/gtk-osx.modules"/>
+
+
+<!-- git repos -->
+  <repository type="git" name="github.com"
+      href="https://github.com/"/>
+  <repository type="git" name="gitlab.gnome.org"
+      href="https://gitlab.gnome.org/"/>
+  <repository type="git" name="gitlab.gnome.org/GNOME" default="yes"
+      href="https://gitlab.gnome.org/GNOME/"/>
+
+<!-- tarball repos -->
+  <repository type="tarball" name="ftp.gnu.org"
+      href="https://ftp.gnu.org/gnu/"/>
+  <repository type="tarball" name="qqwing"
+      href="https://qqwing.com/"/>
+  <repository type="tarball" name="tarball.github.com"
+      href="https://github.com/"/>
+
+ <repository type="svn" name="svn.abisource.com"
+      href="http://svn.abisource.com/"/>
+  <repository type="cvs" name="refdbg.sf.net"
+      cvsroot=":pserver:anonymous@refdbg.cvs.sourceforge.net:/cvsroot/refdbg"
+      password=""/>
+  <repository type="svn" name="osiris.chipx86.com"
+      href="http://osiris.chipx86.com/svn/osiris-misc/"/>
+  <repository type="git" name="github.com"
+    href="git://github.com/"/>
+  <repository type="git" name="gitlab.com"
+    href="https://gitlab.com/"/>
+  <repository type="git" name="gitlab.freedesktop.org"
+      href="https://gitlab.freedesktop.org/"/>
+  <repository type="git" name="git.freedesktop.org"
+      href="git://anongit.freedesktop.org/git/"/>
+  <repository type="bzr" name="launchpad.net"
+      href="lp:"/>
+  <repository type="git" name="git.launchpad.net"
+      href="https://git.launchpad.net/" />
+  <repository type="git" name="git.kernel.org"
+      href="git://git.kernel.org/pub/scm/"/>
+  <repository type="mtn" name="pidgin.im"
+      server="pidgin.im" database="pidgin.im.mtn"
+      defbranch="im.pidgin.pidgin"/>
+  <repository type="git" name="git.savannah.nongnu.org"
+      href="git://git.savannah.nongnu.org/"/>
+  <repository type="svn" name="svn.fluendo.com"
+      href="https://core.fluendo.com/gstreamer/svn/"
+      trunk-template="trunk/%(module)s"
+      branches-template="branches/%(branch)"
+      tags-template="tags/%(tag)" />
+  <repository type="hg" name="hg.circular-chaos.org"
+    href="http://hg.circular-chaos.org" />
+  <repository type="tarball" name="matchbox-project.org"
+      href="http://matchbox-project.org/sources/"/>
+  <repository type="git" name="git.xfce.org"
+      href="git://git.xfce.org"/>
+  <repository type="git" name="git.ardour.org"
+      href="git://git.ardour.org/"/>
+  <repository type="git" name="gitorious.org"
+      href="https://gitorious.org/"/>
+  <repository type="tarball" name="samba.org"
+      href="https://ftp.samba.org/pub/"/>
+  <repository type="tarball" name="openchange.org"
+      href="http://tracker.openchange.org/attachments/download/"/>
+  <repository type="tarball" name="gnome.org"
+      href="https://download.gnome.org/sources/"/>
+  <repository type="svn" name="opalvoip.sf.net"
+      href="https://svn.code.sf.net/p/opalvoip/code/"/>
+  <repository type="svn" name="valgrind.org"
+      href="svn://svn.valgrind.org/valgrind/"/>
+  <repository type="tarball" name="dbus"
+    href="http://dbus.freedesktop.org/releases/"/>
+  <repository type="tarball" name="nice.freedesktop.org"
+    href="https://nice.freedesktop.org/releases/"/>
+  <repository type="tarball" name="mono.net"
+    href="http://download.mono-project.com/sources/"/>
+  <repository type="tarball" name="launchpad.net/tarball"
+      href="https://launchpad.net/"/>
+  <repository type="tarball" name="github-tar"
+      href="https://github.com/"/>
+  <repository type="tarball" name="monogithub"
+    href="https://github.com/downloads/mono/dbus-sharp/"/>
+  <repository type="tarball" name="downloads.sourceforge.net"
+      href="http://downloads.sourceforge.net/"/>
+  <repository type="tarball" name="freedesktop.org"
+      href="http://freedesktop.org/software/"/>
+
+<!-- tarball repos -->
+<repository type="tarball" name="gnome.org"
+    href="https://download.gnome.org/sources/"/>
+<repository type="tarball" name="cairo.org"
+    href="https://cairographics.org/"/>
+<repository type="tarball" name="sourceforge.net"
+    href="https://sourceforge.net/projects/"/>
+<repository type="tarball" name="webkitgtk.org"
+    href="https://webkitgtk.org/releases/"/>
+<repository type="tarball" name="wpewebkit.org"
+    href="https://wpewebkit.org/releases/"/>
+<repository type="tarball" name="freedesktop.org"
+    href="https://freedesktop.org/software/"/>
+<repository type="tarball" name="people.freedesktop.org"
+    href="https://people.freedesktop.org/"/>
+<repository type="tarball" name="icon-theme.freedesktop.org"
+    href="https://icon-theme.freedesktop.org/releases/"/>
+<repository type="tarball" name="ftp.gnu.org"
+    href="https://ftp.gnu.org/gnu/"/>
+<repository type="tarball" name="mir"
+    href="https://launchpad.net/mir/"/>
+<repository type="tarball" name="xorg-tar"
+    href="http://xorg.freedesktop.org/"/>
+<repository type="tarball" name="github-tar"
+    href="https://github.com/"/>
+<repository type="tarball" name="pcre"
+    href="https://ftp.pcre.org/pub/pcre/"/>
+<repository type="tarball" name="speech-dispatcher"
+    href="https://devel.freebsoft.org/pub/projects/speechd/"/>
+<repository type="tarball" name="spice"
+    href="https://www.spice-space.org/download/"/>
+<repository type="tarball" name="savannah-download"
+    href="https://download.savannah.gnu.org/releases/"/>
+<repository type="tarball" name="gnome-download"
+    href="https://download.gnome.org/"/>
+<repository type="tarball" name="pypi.org"
+    href="https://pypi.org/packages/source/"/>
+
+  <cmake id="evolution"
+         cmakeargs="-DENABLE_LIBCRYPTUI=OFF -DENABLE_PST_IMPORT=OFF -DENABLE_YTNEF=OFF -DWITH_ENCHANT_VERSION=2">
+    <branch/>
+    <dependencies>
+      <dep package="atk"/>
+      <dep package="bogofilter"/>
+      <dep package="cairo"/>
+      <dep package="enchant-2"/>
+      <dep package="evolution-data-server"/>
+      <dep package="gcr"/>
+      <dep package="gdk-pixbuf"/>
+      <dep package="gnome-autoar"/>
+      <dep package="gnome-desktop"/>
+      <dep package="gnome-online-accounts"/>
+      <dep package="gsettings-desktop-schemas"/>
+      <dep package="gstreamer"/>
+      <dep package="glib"/>
+      <dep package="gtk+-3"/>
+      <dep package="highlight"/>
+      <dep package="intltool"/>
+      <dep package="libcanberra"/>
+      <dep package="libgcrypt"/>
+      <dep package="libgdata"/>
+      <dep package="libgweather"/>
+      <dep package="libical"/>
+      <dep package="libnotify"/>
+      <dep package="libsoup"/>
+      <dep package="libxml2"/>
+      <dep package="nspr"/>
+      <dep package="nss"/>
+      <dep package="openldap"/>
+      <dep package="shared-mime-info"/>
+      <dep package="spamassassin"/>
+      <dep package="WebKit"/>
+      <dep package="yelp-tools"/>
+    </dependencies>
+    <suggests>
+      <dep package="geoclue"/>
+      <dep package="geocode-glib"/>
+    </suggests>
+  </cmake>
+
+  <cmake id="evolution-ews">
+    <branch/>
+    <dependencies>
+      <dep package="glib"/>
+      <dep package="gtk+-3"/>
+      <dep package="libsoup"/>
+      <dep package="intltool"/>
+      <dep package="evolution-data-server"/>
+      <dep package="evolution"/>
+      <dep package="sqlite3"/>
+      <dep package="libical"/>
+    </dependencies>
+  </cmake>
+
+  <cmake id="evolution-data-server"
+         cmakeargs="-DENABLE_INTROSPECTION=ON -DENABLE_VALA_BINDINGS=ON -DENABLE_UOA=OFF -DENABLE_GOOGLE_AUTH=OFF">
+    <if condition-set="freebsd">
+      <cmakeargs value="-DWITH_LIBDB_CFLAGS=-I/usr/local/include/db5 -DWITH_LIBDB_LIBS=-ldb-5"/>
+    </if>
+    <if condition-unset="x11">
+      <cmakeargs value="-DENABLE_GTK=OFF"/>
+    </if>
+    <branch/>
+    <dependencies>
+      <dep package="intltool"/>
+      <dep package="libsoup"/>
+      <dep package="libxml2"/>
+      <dep package="gtk+-3"/>
+      <dep package="sqlite3"/>
+      <dep package="gcr"/>
+      <dep package="libgweather"/>
+      <dep package="libical"/>
+      <dep package="libgdata"/>
+      <dep package="gnome-online-accounts"/>
+      <dep package="liboauth"/>
+      <dep package="vala"/>
+      <dep package="libdb"/>
+      <dep package="libsecret"/>
+      <dep package="WebKit"/>
+      <dep package="openldap"/>
+      <dep package="nspr"/>
+      <dep package="nss"/>
+      <dep package="krb5"/>
+      <dep package="gperf"/>
+    </dependencies>
+  </cmake>
+  
+  <autotools id="enchant-2"
+             autogen-sh="configure"
+             autogenargs="--with-hunspell --with-hunspell-dir=/usr/share/myspell">
+    <if condition-set="freebsd">
+      <autogenargs value="--with-hunspell-dir=/usr/local/share/hunspell"/>
+    </if>
+    <branch repo="github-tar"
+            version="2.2.12"
+            module="AbiWord/enchant/releases/download/v${version}/enchant-${version}.tar.gz"
+            hash="sha256:6b9bc58ae714ee7f5335ade966f4ac5718d5339e280cc9e1cca9ab278c06227e">
+    </branch>
+    <dependencies>
+      <dep package="hunspell"/>
+      <dep package="glib"/>
+    </dependencies>
+  </autotools>
+  
+  <meson id="gcr" mesonargs="-Dgtk_doc=false">
+    <if condition-unset="x11">
+      <mesonargs value="-Dgtk=false -Dgtk_doc=false"/>
+    </if>
+    <branch/>
+    <dependencies>
+      <dep package="gnome-common"/>
+      <dep package="glib"/>
+      <dep package="libgcrypt" />
+      <dep package="libtasn1" />
+      <dep package="p11-kit"/>
+      <dep package="vala"/>
+      <if condition-set="x11">
+        <dep package="gtk+-3"/>
+      </if>
+    </dependencies>
+  </meson>
+  
+ <autotools id="gnome-autoar">
+   <branch/>
+    <dependencies>
+      <dep package="glib"/>
+      <dep package="gobject-introspection"/>
+      <dep package="libarchive"/>
+      <dep package="gnome-common"/>
+    </dependencies>
+  </autotools>
+  
+  <meson id="gnome-desktop" mesonargs="-Dgnome_distributor=JHBuild">
+    <if condition-unset="udev-hwdb">
+      <mesonargs  value="-Dudev=disabled"/>
+    </if>
+    <branch/>
+    <dependencies>
+      <dep package="intltool"/>
+      <dep package="libxkbfile"/>
+      <dep package="libXrandr"/>
+      <dep package="gdk-pixbuf"/>
+      <dep package="glib"/>
+      <dep package="gtk+-3"/>
+      <dep package="gsettings-desktop-schemas"/>
+      <dep package="iso-codes"/>
+      <dep package="yelp-tools"/> <!-- for the docs -->
+      <dep package="xkeyboard-config"/>
+      <if condition-set="udev-hwdb">
+        <dep package="libudev"/>
+      </if>
+      <if condition-set="linux">
+        <dep package="libseccomp"/>
+      </if>
+    </dependencies>
+  </meson>
+  
+   <autotools id="gnome-online-accounts">
+    <if condition-set="freebsd">
+      <autogenargs value="--disable-kerberos --disable-fedora"/>
+    </if>
+    <branch/>
+    <dependencies>
+      <dep package="gtk+-3"/>
+      <dep package="WebKit"/>
+      <dep package="librest"/>
+      <dep package="libsoup"/>
+      <dep package="libsecret"/>
+      <dep package="json-glib"/>
+      <dep package="libsecret"/>
+      <dep package="libxml2"/>
+      <dep package="m4-common"/>
+    </dependencies>
+  </autotools>
+  
+<meson id="gtk+-3" mesonargs="-Dbroadway_backend=true -Dman=true">
+    <if condition-set="x11">
+      <mesonargs value="-Dx11_backend=true"/>
+    </if>
+    <if condition-unset="x11">
+      <mesonargs value="-Dx11_backend=false"/>
+    </if>
+    <if condition-set="wayland">
+      <mesonargs value="-Dwayland_backend=true"/>
+    </if>
+    <if condition-unset="wayland">
+      <mesonargs value="-Dwayland_backend=false"/>
+    </if>
+    <if condition-set="mir">
+      <mesonargs value="-Dmir_backend=true"/>
+    </if>
+    <if condition-unset="mir">
+      <mesonargs value="-Dmir_backend=false"/>
+    </if>
+    <if condition-set="quartz">
+      <mesonargs value="-Dquartz_backend=true"/>
+    </if>
+    <if condition-unset="quartz">
+      <mesonargs value="-Dquartz_backend=false"/>
+    </if>
+    <if condition-set="macos">
+      <mesonargs value="-Dman=false"/>
+    </if>
+    <branch repo="gitlab.gnome.org" checkoutdir="gtk+-3" module="GNOME/gtk.git" revision="gtk-3-24"/>
+    <dependencies>
+      <dep package="atk"/>
+      <dep package="glib"/>
+      <dep package="cairo"/>
+      <dep package="pango"/>
+      <dep package="gdk-pixbuf"/>
+      <dep package="gtk-doc"/>
+      <dep package="gobject-introspection"/>
+      <dep package="libepoxy"/>
+      <dep package="cups"/>
+      <if condition-set="x11">
+        <dep package="libXcursor"/>
+      </if>
+      <if condition-unset="quartz">
+        <dep package="at-spi2-atk"/>
+      </if>
+      <if condition-set="wayland">
+        <dep package="libxkbcommon"/>
+        <if condition-set="linux">
+          <dep package="wayland"/>
+        </if>
+        <dep package="wayland-egl"/>
+        <dep package="wayland-protocols"/>
+      </if>
+      <if condition-set="mir">
+        <dep package="mir"/>
+      </if>
+    </dependencies>
+    <suggests>
+      <!-- Many GTK+ apps require desktop-file-validate. -->
+      <dep package="desktop-file-utils"/>
+      <dep package="shared-mime-info"/>
+    </suggests>
+  </meson>
+  
+  <autotools id="intltool" autogen-sh="configure">
+    <branch repo="launchpad" version="0.51.0" size="162286"
+            module="intltool/trunk/${version}/+download/intltool-${version}.tar.gz"
+            hash="md5:12e517cac2b57a0121cda351570f1e63"/>
+  </autotools>
+  
+  <meson id="libgdata" mesonargs="-Dgtk_doc=false">
+    <pkg-config>libgdata.pc</pkg-config>
+    <branch/>
+    <dependencies>
+      <dep package="json-glib"/>
+      <dep package="gcr"/>
+      <dep package="glib"/>
+      <dep package="gnome-online-accounts"/>
+      <dep package="gobject-introspection"/>
+      <dep package="libxml2"/>
+      <dep package="libsoup"/>
+      <dep package="liboauth"/>
+      <dep package="uhttpmock"/>
+    </dependencies>
+  </meson>
+  
+  <meson id="libgweather">
+    <branch/>
+    <dependencies>
+      <dep package="libxml2"/>
+      <dep package="geocode-glib"/>
+      <dep package="glib"/>
+      <dep package="gtk+-3"/>
+      <dep package="libsoup"/>
+    </dependencies>
+  </meson>
+  
+  <cmake id="libical"
+         cmakeargs="-DUSE_INTEROPERABLE_VTIMEZONES:BOOL=true
+                    -DICAL_ALLOW_EMPTY_PROPERTIES:BOOL=true
+                    -DGOBJECT_INTROSPECTION:BOOL=true
+                    -DICAL_GLIB:BOOL=true
+                    -DICAL_GLIB_VAPI:BOOL=true
+                    -DSHARED_ONLY:BOOL=true">
+    <branch repo="github-tar"
+            version="3.0.7"
+            checkoutdir="libical-${version}"
+            module="libical/libical/releases/download/v${version}/libical-${version}.tar.gz"
+            hash="sha256:0abe66df1ea826e57db7f281c704ede834c84139012e6c686ea7adafd4e763fc"
+            size="881352">
+    </branch>
+  </cmake>
+  
+  <meson id="libnotify">
+    <branch/>
+    <dependencies>
+      <dep package="glib"/>
+      <dep package="gtk+-3"/>
+      <dep package="gobject-introspection"/>
+      <dep package="docbook-xsl"/>
+      <dep package="docbook-xml"/>
+      <dep package="xsltproc"/>
+    </dependencies>
+  </meson>
+  
+<cmake id="WebKit" cmakeargs="-DPORT=GTK -DCMAKE_BUILD_TYPE=RelWithDebInfo">
+    <if condition-unset="x11">
+      <cmakeargs value="-DENABLE_X11_TARGET=OFF"/>
+    </if>
+    <if condition-unset="wayland">
+      <cmakeargs value="-DENABLE_WAYLAND_TARGET=OFF"/>
+    </if>
+    <pkg-config>webkit2gtk-4.0.pc</pkg-config>
+    <branch repo="webkitgtk.org"
+            module="webkitgtk-2.30.3.tar.xz" version="2.30.3"
+            hash="sha256:6dea14f03916882816f2fed9497a5103fc54b2ab8602ab145ca991e4951e5e7f"
+            size="22311704"/>
+    <dependencies>
+      <dep package="c++"/>
+      <dep package="at-spi2-core"/>
+      <dep package="brotli"/>
+      <dep package="cairo"/>
+      <dep package="enchant-2"/>
+      <dep package="fontconfig"/>
+      <dep package="freetype2"/>
+      <dep package="geoclue"/>
+      <dep package="gobject-introspection"/>
+      <dep package="gperf"/>
+      <dep package="gst-plugins-bad"/>
+      <dep package="gst-plugins-base"/>
+      <dep package="gst-plugins-good"/>
+      <dep package="gtk+-3"/>
+      <dep package="harfbuzz"/>
+      <dep package="hyphen"/>
+      <dep package="libicu"/>
+      <dep package="libjpeg"/>
+      <dep package="openjpeg"/>
+      <dep package="libnotify"/>
+      <dep package="libpng"/>
+      <dep package="libsecret"/>
+      <dep package="libsoup"/>
+      <dep package="libwebp"/>
+      <dep package="libxml2"/>
+      <dep package="libxslt"/>
+      <!-- Either libGL or libGLES is required. -->
+      <dep package="mesa-libGLES"/>
+      <dep package="pango"/>
+      <dep package="ruby"/>
+      <dep package="sqlite3"/>
+      <dep package="upower"/>
+      <dep package="woff2"/>
+      <if condition-set="x11">
+        <dep package="libXcomposite"/>
+        <dep package="libXdamage"/>
+        <dep package="libXrender"/>
+        <dep package="libXt"/>
+      </if>
+      <if condition-set="wayland">
+        <if condition-set="linux">
+          <dep package="wayland"/>
+        </if>
+        <dep package="wpebackend-fdo"/>
+      </if>
+    </dependencies>
+    <suggests>
+      <dep package="gst-libav"/>
+    </suggests>
+  </cmake>
+  
+   <meson id="geoclue">
+    <if condition-unset="linux">
+      <mesonargs value="-D3g-source=false -Dmodem-gps-source=false -Dcdma-source=false"/>
+    </if>
+    <if condition-set="macos">
+      <mesonargs value="-Dnmea-source=false"/>
+    </if>
+    <branch repo="gitlab.freedesktop.org"
+            module="geoclue/geoclue.git"
+            checkoutdir="geoclue"/>
+    <dependencies>
+      <dep package="avahi"/>
+      <dep package="libnotify"/>
+      <dep package="glib"/>
+      <dep package="json-glib"/>
+      <dep package="libsoup"/>
+      <dep package="libxml2"/>
+      <if condition-set="linux">
+        <dep package="ModemManager"/>
+      </if>
+    </dependencies>
+  </meson>
+  
+  <meson id="geocode-glib">
+    <branch/>
+    <dependencies>
+      <dep package="glib"/>
+      <dep package="json-glib"/>
+      <dep package="libsoup"/>
+      <dep package="gobject-introspection"/>
+      <dep package="gtk-doc"/>
+    </dependencies>
+  </meson>
+
+
+
+</moduleset>

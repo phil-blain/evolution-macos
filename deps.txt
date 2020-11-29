@@ -1,0 +1,25 @@
+sysdeps:
+W: evolution has a dependency on unknown "bogofilter" module
+W: evolution has a dependency on unknown "highlight" module
+W: evolution has a dependency on unknown "libcanberra" module
+W: evolution has a dependency on unknown "nss" module
+W: evolution has a dependency on unknown "openldap" module
+W: evolution has a dependency on unknown "spamassassin" module
+W: evolution-ews has a dependency on unknown "sqlite3" module
+
+W: evolution has a dependency on unknown "enchant-2" module
+W: evolution has a dependency on unknown "evolution-data-server" module
+W: evolution has a dependency on unknown "gcr" module
+W: evolution has a dependency on unknown "gnome-autoar" module
+W: evolution has a dependency on unknown "gnome-desktop" module
+W: evolution has a dependency on unknown "gnome-online-accounts" module
+W: evolution has a dependency on unknown "gtk+-3" module
+W: evolution has a dependency on unknown "intltool" module
+W: evolution has a dependency on unknown "libgdata" module
+W: evolution has a dependency on unknown "libgweather" module
+W: evolution has a dependency on unknown "libical" module
+W: evolution has a dependency on unknown "libnotify" module
+W: evolution has a dependency on unknown "WebKit" module
+W: evolution has a dependency on unknown "geoclue" module
+W: evolution has a dependency on unknown "geocode-glib" module
+
