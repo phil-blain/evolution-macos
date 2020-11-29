@@ -97,8 +97,6 @@
     href="https://webkitgtk.org/releases/"/>
 <repository type="tarball" name="wpewebkit.org"
     href="https://wpewebkit.org/releases/"/>
-<repository type="tarball" name="freedesktop.org"
-    href="https://freedesktop.org/software/"/>
 <repository type="tarball" name="people.freedesktop.org"
     href="https://people.freedesktop.org/"/>
 <repository type="tarball" name="icon-theme.freedesktop.org"
