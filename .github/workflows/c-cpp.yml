@@ -34,7 +34,7 @@ jobs:
         jhbuild build meta-gtk-osx-bootstrap meta-gtk-osx-gtk3
     - name: Setup mymodules
       run: |
-        echo "moduleset=os.path.join(os.environ['HOME'], 'mymodules.modules')" >> .config/jhbuildrc-custom
+        echo "moduleset=os.path.join(os.environ['HOME'], 'mymodules.modules')" >> ~/.config/jhbuildrc-custom
         cp mymodules.modules $HOME/
         export PATH="$HOME/.new_local/bin:$PATH"
         jhbuild evolution evolution-ews
