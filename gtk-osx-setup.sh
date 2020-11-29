@@ -109,7 +109,7 @@ if test ! -x "`eval echo $PIP`" ; then
 fi
 
 # Install pipenv
-$PIP install --upgrade --user pipenv==2018.10.09
+$PIP install --upgrade --user pipenv
 pip_remove typing
 PIPENV="$PYTHONUSERBASE/bin/pipenv"
 
