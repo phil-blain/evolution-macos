@@ -13,10 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v3
-      with:
-        sudo: false
     - name: Mangle Homebrew
       run: |
         sudo mv /usr/local/bin /usr/local/mangled-bin
