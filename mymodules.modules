@@ -28,8 +28,7 @@
       password=""/>
   <repository type="svn" name="osiris.chipx86.com"
       href="http://osiris.chipx86.com/svn/osiris-misc/"/>
-  <repository type="git" name="github.com"
-    href="git://github.com/"/>
+
   <repository type="git" name="gitlab.com"
     href="https://gitlab.com/"/>
   <repository type="git" name="gitlab.freedesktop.org"
@@ -90,8 +89,6 @@
       href="http://freedesktop.org/software/"/>
 
 <!-- tarball repos -->
-<repository type="tarball" name="gnome.org"
-    href="https://download.gnome.org/sources/"/>
 <repository type="tarball" name="cairo.org"
     href="https://cairographics.org/"/>
 <repository type="tarball" name="sourceforge.net"
@@ -106,14 +103,10 @@
     href="https://people.freedesktop.org/"/>
 <repository type="tarball" name="icon-theme.freedesktop.org"
     href="https://icon-theme.freedesktop.org/releases/"/>
-<repository type="tarball" name="ftp.gnu.org"
-    href="https://ftp.gnu.org/gnu/"/>
 <repository type="tarball" name="mir"
     href="https://launchpad.net/mir/"/>
 <repository type="tarball" name="xorg-tar"
     href="http://xorg.freedesktop.org/"/>
-<repository type="tarball" name="github-tar"
-    href="https://github.com/"/>
 <repository type="tarball" name="pcre"
     href="https://ftp.pcre.org/pub/pcre/"/>
 <repository type="tarball" name="speech-dispatcher"
@@ -126,6 +119,8 @@
     href="https://download.gnome.org/"/>
 <repository type="tarball" name="pypi.org"
     href="https://pypi.org/packages/source/"/>
+
+<repository type="tarball" name="launchpad" href="http://launchpad.net/"/>
 
   <cmake id="evolution"
          cmakeargs="-DENABLE_LIBCRYPTUI=OFF -DENABLE_PST_IMPORT=OFF -DENABLE_YTNEF=OFF -DWITH_ENCHANT_VERSION=2">
